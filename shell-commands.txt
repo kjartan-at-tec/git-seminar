@@ -1,0 +1,6 @@
+git init git-seminar
+cd git-seminar
+git remote add https://github.com/kjartan-at-tec/git-seminar.git
+git fetch
+git merge origin/master
+
