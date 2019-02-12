@@ -7,3 +7,5 @@
 ## Seminar February 25
 
 ## Useful links
+* (The pro git book)[https://git-scm.com/book/en/v2] freely available online
+* 
