@@ -9,6 +9,7 @@
 1. `branch` and `checkout`
 2. `merge`
 3. `rebase`
+4. `cherry-pick`
 ## Seminar February 25
 ### Forking and pull requests
 ### Master git branching
