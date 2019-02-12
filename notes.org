@@ -1,1 +1,7 @@
 * Git seminar
+** Monday February 18
+*** Basic concepts
+clone, init, fetch, pull, merge
+** Monday February 25
+*** Advanced concepts
+rebase, branch, checkout
