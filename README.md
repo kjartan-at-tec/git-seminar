@@ -13,6 +13,6 @@
 ### Forking and pull requests
 ### Master git branching
 ## Useful links
-* (The pro git book)[https://git-scm.com/book/en/v2] freely available online
-* (Mastering markdown)[https://guides.github.com/features/mastering-markdown/]
-* (Learn git branching)[https://learngitbranching.js.org]
+* [The pro git book](https://git-scm.com/book/en/v2) freely available online
+* [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
+* [Learn git branching](https://learngitbranching.js.org)
