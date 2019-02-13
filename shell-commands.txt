@@ -5,3 +5,4 @@ git fetch
 git merge origin/master
 git branch --set-upstream-to=origin/master master
 git status
+git log --oneline --graph
