@@ -1,0 +1,97 @@
+#+OPTIONS: toc:nil
+# #+LaTeX_CLASS: koma-article
+
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation,aspectratio=1610]
+#+OPTIONS: H:2
+
+#+LaTex_HEADER: \usepackage{khpreamble}
+
+#+title: git and GitHub - seminar 1
+#+date: 2019-02-18
+
+* What do I want the students to understand?			   :noexport:
+  - Basic use of git
+
+
+* Intro
+** Resources
+     https://git-scm.com/book/en/v2/
+     https://www.atlassian.com/git/tutorials/
+     https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+
+** What is git?
+    A version control system
+
+** What is version control?
+   The *correct* solution to a common problem:
+
+   #+BEGIN_LaTeX
+          \begin{center}
+          \begin{tikzpicture}
+            \node (linus) at (0,0) {\includegraphics[width=5cm]{figures/Linus.jpg}};
+             \node [draw, align=center,
+              cloud callout, cloud puffs = 17, cloud puff arc=140,
+              callout pointer segments = 3, anchor = pointer,
+   callout relative pointer = {(330:2cm)},
+              aspect = 3, ] at (-3, 1.6)
+         {Oh no!\\My code doesn't work anymore!\\It worked perfectly last Monday!};
+          \end{tikzpicture}
+          \end{center}
+
+   #+END_LaTeX
+
+
+
+** What is GitHub?
+
+   An online service to host *git* repositories (and a with a lot of services to manage code projects)
+
+** Version control the git way
+   #+BEGIN_CENTER
+    \includegraphics[width=0.8\linewidth]{figures/checkins.png}
+   #+END_CENTER
+
+** Version control the git way
+
+   It is *distributed*!
+
+   #+BEGIN_CENTER
+    \includegraphics[width=0.5\linewidth]{figures/distributed.png}
+   #+END_CENTER
+
+
+** Let's start locally
+
+   The three states in your local *git* repository
+
+   #+BEGIN_CENTER
+    \includegraphics[width=0.8\linewidth]{figures/three-states.png}
+   #+END_CENTER
+** Let's start locally
+
+   The life of a file in *git*
+
+   #+BEGIN_CENTER
+    \includegraphics[width=0.8\linewidth]{figures/lifecycle-files.png}
+   #+END_CENTER
+** Let's start locally
+*** Goal: Understand local workflow
+    1. Create a repository
+    2. Add and commit some files
+    3. Fix bad commits
+    4. Create a branch, then merge
+
+
+** Let's go online
+*** Goal: Understand online/collaborative workflow
+    1. Clone a repository
+    2. Create a branch to work on
+    3. Pull in upstream changes
+    4. Merge/rebase
+    5. Push to online repository
+
+** (Re)sources
+
+   -  [[https://git-scm.com/book/en/v2/]]
+   -  https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet

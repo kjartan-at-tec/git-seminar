@@ -11,8 +11,14 @@
 3. `rebase`
 4. `cherry-pick`
 ## Seminar February 25
+### Models for collaboration
+* [About collaborative development models](https://help.github.com/en/articles/about-collaborative-development-models) from help.github.com
+* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+* [A successful git branching model](https://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen
+* [Github standard fork & pull request workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) by Chase Pettit
 ### Forking and pull requests
-### Master git branching
+### Working with issues
+
 ## Useful links
 * [The pro git book](https://git-scm.com/book/en/v2) freely available online
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
