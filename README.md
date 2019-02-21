@@ -17,8 +17,9 @@
 * [A successful git branching model](https://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen
 * [Github standard fork & pull request workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) by Chase Pettit
 ### Forking and pull requests
+Hands-on live programming activity
 ### Working with issues
-
+Hands on live programming activity
 ## Useful links
 * [The pro git book](https://git-scm.com/book/en/v2) freely available online
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
