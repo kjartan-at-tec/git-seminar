@@ -20,7 +20,8 @@
 Hands-on live programming activity
 ### Working with issues
 Hands on live programming activity
-## Useful links
+## Useful links - Add your own here!
 * [The pro git book](https://git-scm.com/book/en/v2) freely available online
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 * [Learn git branching](https://learngitbranching.js.org)
+
