@@ -25,3 +25,5 @@ Hands on live programming activity
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 * [Learn git branching](https://learngitbranching.js.org)
 * VIDEO:[Github Tutorial For Beginners](https://www.youtube.com/watch?v=0fKg7e37bQE)
+* [Machine Learning git repo ](https://github.com/ageron/handson-ml)
+* [GitHub standard fork and pull](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
