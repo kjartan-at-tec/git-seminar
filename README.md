@@ -1,4 +1,4 @@
-# Playing around to learn git/github
+hngv# Playing around to learn git/github
 ## Seminar February 18
 ### Basic commands - linear development
 1. `clone` or  `init` and `remote add` and `git branch --set-upstream-to`
@@ -25,3 +25,4 @@ Hands on live programming activity
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 * [Learn git branching](https://learngitbranching.js.org)
 
+* [Basic comands for git](http://rogerdudler.github.io/git-guide/)
