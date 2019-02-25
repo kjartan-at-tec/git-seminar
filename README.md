@@ -24,4 +24,4 @@ Hands on live programming activity
 * [The pro git book](https://git-scm.com/book/en/v2) freely available online
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 * [Learn git branching](https://learngitbranching.js.org)
-
+*[Machine Learning git repo ](https://github.com/ageron/handson-ml)
