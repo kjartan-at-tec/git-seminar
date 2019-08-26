@@ -14,6 +14,13 @@
 ** Goal
   *Understanding how to collaborate with git and GitHub*
 
+* Resources
+** (Re)sources
+
+   -  [[https://git-scm.com/book/en/v2/]]
+   -  https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+   -  https://desktop.github.com
+
 * Repetition
 ** Version control the git way
    #+BEGIN_CENTER
@@ -75,7 +82,7 @@ git checkout -b my-contributions
    Modify =README.md=,  add to staging area, commit.
 
 ** Submit a pull request
-   1. Make your fork's master branch up-to-date with the upstream master
+   1. Make your local master branch up-to-date with origin and upstream
       1. Checkout master =git checkout master=
       2. Fetch changes from upstream repository =git pull=
       3. Checkout development branch =git checkout my-contributions=
@@ -89,9 +96,3 @@ git checkout -b my-contributions
     3. Pull in upstream changes
     4. Merge/rebase
     5. Push to online repository
-
-** (Re)sources
-
-   -  [[https://git-scm.com/book/en/v2/]]
-   -  https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
-   -  https://desktop.github.com
