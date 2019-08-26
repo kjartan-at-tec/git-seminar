@@ -19,17 +19,18 @@
 ### Forking and pull requests
 Hands-on live programming activity
 ### Working with issues
-Hands on live programming activity
+Hands-on live programming activity
 ## Useful links - Add your own here!
 * [The pro git book](https://git-scm.com/book/en/v2) freely available online
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
+* [Learn git branching](https://learngitbranching.js.org)
 * [Learn git branching](https://learngitbranching.js.org)
 
 
 * [Basic comands for git](http://rogerdudler.github.io/git-guide/)
 
-* VIDEO: [Github Tutorial For Beginners](https://www.youtube.com/watch?v=0fKg7e37bQE)
+* Video: [Github Tutorial For Beginners](https://www.youtube.com/watch?v=0fKg7e37bQE)
 * [Machine Learning git repository](https://github.com/ageron/handson-ml)
 * [GitHub standard fork and pull](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
-* This line is here just to make a conflict
 
+* This line is here just to make a conflict
