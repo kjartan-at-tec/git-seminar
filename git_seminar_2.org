@@ -82,9 +82,12 @@ git checkout -b my-contributions
 
 ** Submit a pull request
    1. Make your fork's master branch up-to-date with the upstream master
-      1. Checkout master
-      2. Fetch changes from upstream repository
-   2. 
+      1. Checkout master =git checkout master=
+      2. Fetch changes from upstream repository =git pull=
+      3. Checkout development branch =git checkout my-contributions=
+      4. Merge master branch =git merge master=
+   2. Push branch to origin =git push origin my-contributions=
+   3. On GitHub, create a pull request.
 ** Let's go online
 *** Goal: Understand online/collaborative workflow
     1. Clone a repository
