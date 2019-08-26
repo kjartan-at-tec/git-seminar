@@ -1,5 +1,5 @@
 # Playing around to learn git/github
-
+## Basic git
 ### Basic commands - linear development
 1. `clone` or  `init` and `remote add` and `git branch --set-upstream-to`
 2. `pull`, or `fetch` and `merge`
@@ -10,7 +10,7 @@
 2. `merge`
 3. `rebase`
 4. `cherry-pick`
-## Seminar February 25
+## Collaboration
 ### Models for collaboration
 * [About collaborative development models](https://help.github.com/en/articles/about-collaborative-development-models) from help.github.com
 * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
