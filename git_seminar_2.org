@@ -8,40 +8,13 @@
 #+LaTex_HEADER: \usepackage{khpreamble}
 
 #+title: git and GitHub - Collaboration and workflow
-#+date: 2019-02-25
+#+date:
 
 * Objective
 ** Goal
   *Understanding how to collaborate with git and GitHub*
 
 * Repetition
-** What is git?
-    A version control system
-
-** What is version control?
-   The *correct* solution to a common problem:
-
-   #+BEGIN_LaTeX
-          \begin{center}
-          \begin{tikzpicture}
-            \node (linus) at (0,0) {\includegraphics[width=5cm]{figures/Linus.jpg}};
-             \node [draw, align=center,
-              cloud callout, cloud puffs = 17, cloud puff arc=140,
-              callout pointer segments = 3, anchor = pointer,
-   callout relative pointer = {(330:2cm)},
-              aspect = 3, ] at (-3, 1.6)
-         {Oh no!\\My code doesn't work anymore!\\It worked perfectly last Monday!};
-          \end{tikzpicture}
-          \end{center}
-
-   #+END_LaTeX
-
-
-
-** What is GitHub?
-
-   An online service to host *git* repositories (and a with a lot of services to manage code projects)
-
 ** Version control the git way
    #+BEGIN_CENTER
     \includegraphics[width=0.8\linewidth]{figures/checkins.png}
@@ -55,13 +28,32 @@
     \includegraphics[width=0.5\linewidth]{figures/distributed.png}
    #+END_CENTER
 
+** Branch, commit, merge and rebase
+   - To create a branch and checking it out immediately:
+     =git checkout -b newFeature=
+     Next commit will be on the newFeature branch
+   - To merge commits done on newFeature into the master branch:
+     =git checkout master; git merge newFeature=
+     This creates a new commit containing the merge
+   - To move the commits done on newFeature onto the master branch
+     =git rebase master=
+     This is  done while on newFeature
+
+** Reset and revert						   :noexport:
+   If you made a mistake in a commit, and want to redo it
+   - If the commit is the last commit:
+     =git reset HEAD^==
+
 
 * Collaboration
 
-** Heading
+** A useful model for collaboration
+   https://nvie.com/files/Git-branching-model.pdf
+
+   From https://nvie.com/posts/a-successful-git-branching-model/
 
 ** Principles
-   * Keep the =master= branch production-ready at all times
+   * Keep the =master= branch production-ready at *all times*
    * Do all development in branches
    * Use *pull requests* to handle suggested changes to the =master= branch
    * Two models: *Fork and Pull* and *Shared Repository*
@@ -71,7 +63,7 @@
 ** Fork clone and add upstream
    After forking and cloning:
 #+BEGIN_SRC shell
-git remote add upstream https://github.com/robotica-cem/git-seminar.git
+git remote add upstream https://github.com/kjartan-at-tec/git-seminar.git
 #+END_SRC
 
 ** Branch and add changes
@@ -80,13 +72,16 @@ git remote add upstream https://github.com/robotica-cem/git-seminar.git
 git checkout -b my-contributions
 #+END_SRC
 
-   Add, modify and commit.
+   Modify =README.md=,  add to staging area, commit.
 
 ** Submit a pull request
    1. Make your fork's master branch up-to-date with the upstream master
-      1. Checkout master
-      2. Fetch changes from upstream repository
-   2. 
+      1. Checkout master =git checkout master=
+      2. Fetch changes from upstream repository =git pull=
+      3. Checkout development branch =git checkout my-contributions=
+      4. Merge master branch =git merge master=
+   2. Push branch to origin =git push origin my-contributions=
+   3. On GitHub, create a pull request.
 ** Let's go online
 *** Goal: Understand online/collaborative workflow
     1. Clone a repository
