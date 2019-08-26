@@ -1,5 +1,5 @@
 # Playing around to learn git/github
-## Seminar February 18
+
 ### Basic commands - linear development
 1. `clone` or  `init` and `remote add` and `git branch --set-upstream-to`
 2. `pull`, or `fetch` and `merge`
