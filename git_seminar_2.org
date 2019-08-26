@@ -97,3 +97,4 @@ git checkout -b my-contributions
 
    -  [[https://git-scm.com/book/en/v2/]]
    -  https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+   -  https://desktop.github.com
