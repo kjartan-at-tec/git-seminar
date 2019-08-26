@@ -24,6 +24,7 @@ Hands on live programming activity
 * [The pro git book](https://git-scm.com/book/en/v2) freely available online
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 * [Learn git branching](https://learngitbranching.js.org)
+* [Learn git branching](https://learngitbranching.js.org)
 
 
 * [Basic comands for git](http://rogerdudler.github.io/git-guide/)
@@ -31,4 +32,3 @@ Hands on live programming activity
 * VIDEO: [Github Tutorial For Beginners](https://www.youtube.com/watch?v=0fKg7e37bQE)
 * [Machine Learning git repository](https://github.com/ageron/handson-ml)
 * [GitHub standard fork and pull](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
-
