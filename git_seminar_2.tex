@@ -1,0 +1,132 @@
+% Created 2019-08-26 lun 15:15
+\documentclass[presentation,aspectratio=1610]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{khpreamble}
+\usetheme{default}
+\author{Kjartan Halvorsen}
+\date{}
+\title{git and GitHub - Collaboration and workflow}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.3.50.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+
+\section{Objective}
+\label{sec-1}
+\begin{frame}[label=sec-1-1]{Goal}
+\alert{Understanding how to collaborate with git and GitHub}
+\end{frame}
+
+\section{Resources}
+\label{sec-2}
+\begin{frame}[label=sec-2-1]{(Re)sources}
+\begin{itemize}
+\item \url{https://git-scm.com/book/en/v2/}
+\item \url{https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet}
+\item \url{https://desktop.github.com}
+\end{itemize}
+\end{frame}
+
+\section{Repetition}
+\label{sec-3}
+\begin{frame}[label=sec-3-1]{Version control the git way}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{figures/checkins.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-3-2]{Version control the git way}
+It is \alert{distributed}!
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{figures/distributed.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-3-3]{Branch, commit, merge and rebase}
+ \begin{itemize}
+\item To create a branch and checking it out immediately:
+\texttt{git checkout -b newFeature}
+Next commit will be on the newFeature branch
+\item To merge commits done on newFeature into the master branch:
+\texttt{git checkout master; git merge newFeature}
+This creates a new commit containing the merge
+\item To move the commits done on newFeature onto the master branch
+\texttt{git rebase master}
+This is  done while on newFeature
+\end{itemize}
+\end{frame}
+
+
+\section{Collaboration}
+\label{sec-4}
+
+\begin{frame}[label=sec-4-1]{A useful model for collaboration}
+\url{https://nvie.com/files/Git-branching-model.pdf}
+
+From \url{https://nvie.com/posts/a-successful-git-branching-model/}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-4-2]{Principles}
+ \begin{itemize}
+\item Keep the \texttt{master} branch production-ready at \alert{all times}
+\item Do all development in branches
+\item Use \alert{pull requests} to handle suggested changes to the \texttt{master} branch
+\item Two models: \alert{Fork and Pull} and \alert{Shared Repository}
+\begin{description}
+\item[{Fork and pull}] Contributors fork the repository, make changes and make pull requests
+\item[{Shared repository}] Contributors have push rights to original repository
+\end{description}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-4-3]{Fork clone and add upstream}
+ After forking and cloning:
+\begin{verbatim}
+git remote add upstream https://github.com/kjartan-at-tec/git-seminar.git
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-4-4]{Branch and add changes}
+ In your cloned fork, create a new branch
+\begin{verbatim}
+git checkout -b my-contributions
+\end{verbatim}
+
+Modify \texttt{README.md},  add to staging area, commit.
+\end{frame}
+
+\begin{frame}[fragile,label=sec-4-5]{Submit a pull request}
+ \begin{enumerate}
+\item Make your local master branch up-to-date with origin and upstream
+\begin{enumerate}
+\item Checkout master \texttt{git checkout master}
+\item Fetch changes from upstream repository \texttt{git pull}
+\item Checkout development branch \texttt{git checkout my-contributions}
+\item Merge master branch \texttt{git merge master}
+\end{enumerate}
+\item Push branch to origin \texttt{git push origin my-contributions}
+\item On GitHub, create a pull request.
+\end{enumerate}
+\end{frame}
+% Emacs 25.3.50.2 (Org mode 8.2.10)
+\end{document}

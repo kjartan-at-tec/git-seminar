@@ -1,0 +1,128 @@
+% Created 2020-02-26 mié 12:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation,aspectratio=1610]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{khpreamble}
+\usetheme{default}
+\author{Kjartan Halvorsen}
+\date{2019-02-18}
+\title{git and GitHub - seminar 1}
+\hypersetup{
+ pdfauthor={Kjartan Halvorsen},
+ pdftitle={git and GitHub - seminar 1},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.3.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Intro}
+\label{sec:org028eaa0}
+\begin{frame}[label={sec:org7e86e0e}]{Resources}
+\url{https://git-scm.com/book/en/v2/}
+\url{https://www.atlassian.com/git/tutorials/}
+\url{https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet}
+\end{frame}
+
+\begin{frame}[label={sec:orgb63dc4e}]{What is git?}
+A version control system
+\end{frame}
+
+\begin{frame}[label={sec:orgf7d153e}]{What is version control?}
+The \alert{correct} solution to a common problem:
+
+\begin{LaTeX}
+       \begin{center}
+       \begin{tikzpicture}
+         \node (linus) at (0,0) {\includegraphics[width=5cm]{figures/Linus.jpg}};
+          \node [draw, align=center,
+           cloud callout, cloud puffs = 17, cloud puff arc=140,
+           callout pointer segments = 3, anchor = pointer,
+callout relative pointer = {(330:2cm)},
+           aspect = 3, ] at (-3, 1.6)
+      {Oh no!\\My code doesn't work anymore!\\It worked perfectly last Monday!};
+       \end{tikzpicture}
+       \end{center}
+\end{LaTeX}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:org8de5e59}]{What is GitHub?}
+An online service to host \alert{git} repositories (and a with a lot of services to manage code projects)
+\end{frame}
+
+\begin{frame}[label={sec:org7aca3cc}]{Version control the git way}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{figures/checkins.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgf4c1227}]{Version control the git way}
+It is \alert{distributed}!
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{figures/distributed.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:org1991fac}]{Let's start locally}
+The three states in your local \alert{git} repository
+
+\begin{center}
+\includegraphics[width=0.8\linewidth]{figures/three-states.png}
+\end{center}
+\end{frame}
+\begin{frame}[label={sec:org2f6dfe6}]{Let's start locally}
+The life of a file in \alert{git}
+
+\begin{center}
+\includegraphics[width=0.8\linewidth]{figures/lifecycle-files.png}
+\end{center}
+\end{frame}
+\begin{frame}[label={sec:org077f6c1}]{Let's start locally}
+\begin{block}{Goal: Understand local workflow}
+\begin{enumerate}
+\item Create a repository
+\item Add and commit some files
+\item Fix bad commits
+\item Create a branch, then merge
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label={sec:orga21a689}]{Let's go online}
+\begin{block}{Goal: Understand online/collaborative workflow}
+\begin{enumerate}
+\item Clone a repository
+\item Create a branch to work on
+\item Pull in upstream changes
+\item Merge/rebase
+\item Push to online repository
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:org8002f9d}]{(Re)sources}
+\begin{itemize}
+\item \url{https://git-scm.com/book/en/v2/}
+\item \url{https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet}
+\end{itemize}
+\end{frame}
+\end{document}

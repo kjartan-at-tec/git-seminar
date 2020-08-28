@@ -89,10 +89,11 @@ git checkout -b my-contributions
       4. Merge master branch =git merge master=
    2. Push branch to origin =git push origin my-contributions=
    3. On GitHub, create a pull request.
-** Let's go online
+** Let's go online						   :noexport:
 *** Goal: Understand online/collaborative workflow
     1. Clone a repository
     2. Create a branch to work on
     3. Pull in upstream changes
     4. Merge/rebase
     5. Push to online repository
+       
