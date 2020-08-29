@@ -1,4 +1,4 @@
-% Created 2020-02-26 mié 12:41
+% Created 2020-08-28 vie 17:04
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation,aspectratio=1610]{beamer}
 \usepackage[utf8]{inputenc}
@@ -17,11 +17,11 @@
 \usepackage{khpreamble}
 \usetheme{default}
 \author{Kjartan Halvorsen}
-\date{2019-02-18}
-\title{git and GitHub - seminar 1}
+\date{2020-08-29}
+\title{git and GitHub an quick introduction}
 \hypersetup{
  pdfauthor={Kjartan Halvorsen},
- pdftitle={git and GitHub - seminar 1},
+ pdftitle={git and GitHub an quick introduction},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 26.3 (Org mode 9.3.6)}, 
@@ -31,21 +31,20 @@
 \maketitle
 
 \section{Intro}
-\label{sec:org028eaa0}
-\begin{frame}[label={sec:org7e86e0e}]{Resources}
+\label{sec:org55ce358}
+\begin{frame}[label={sec:org6f0d367}]{Resources}
 \url{https://git-scm.com/book/en/v2/}
 \url{https://www.atlassian.com/git/tutorials/}
 \url{https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet}
 \end{frame}
 
-\begin{frame}[label={sec:orgb63dc4e}]{What is git?}
+\begin{frame}[label={sec:orge821001}]{What is git?}
 A version control system
 \end{frame}
 
-\begin{frame}[label={sec:orgf7d153e}]{What is version control?}
+\begin{frame}[label={sec:org6888b33}]{What is version control?}
 The \alert{correct} solution to a common problem:
 
-\begin{LaTeX}
        \begin{center}
        \begin{tikzpicture}
          \node (linus) at (0,0) {\includegraphics[width=5cm]{figures/Linus.jpg}};
@@ -57,22 +56,22 @@ callout relative pointer = {(330:2cm)},
       {Oh no!\\My code doesn't work anymore!\\It worked perfectly last Monday!};
        \end{tikzpicture}
        \end{center}
-\end{LaTeX}
 \end{frame}
 
 
-
-\begin{frame}[label={sec:org8de5e59}]{What is GitHub?}
+\begin{frame}[label={sec:org3b29ae9}]{What is GitHub?}
 An online service to host \alert{git} repositories (and a with a lot of services to manage code projects)
+
+It is not the only option. There's also \href{https://about.gitlab.com/}{GitLab} and \href{https://bitbucket.org/product}{Bitbucket}, and others.
 \end{frame}
 
-\begin{frame}[label={sec:org7aca3cc}]{Version control the git way}
+\begin{frame}[label={sec:org49fca42}]{Version control the git way}
 \begin{center}
 \includegraphics[width=0.8\linewidth]{figures/checkins.png}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgf4c1227}]{Version control the git way}
+\begin{frame}[label={sec:org60d87f7}]{Version control the git way}
 It is \alert{distributed}!
 
 \begin{center}
@@ -81,33 +80,32 @@ It is \alert{distributed}!
 \end{frame}
 
 
-\begin{frame}[label={sec:org1991fac}]{Let's start locally}
+\begin{frame}[label={sec:org64bc9ec}]{Let's start locally}
 The three states in your local \alert{git} repository
 
 \begin{center}
 \includegraphics[width=0.8\linewidth]{figures/three-states.png}
 \end{center}
 \end{frame}
-\begin{frame}[label={sec:org2f6dfe6}]{Let's start locally}
+\begin{frame}[label={sec:org737575c}]{Let's start locally}
 The life of a file in \alert{git}
 
 \begin{center}
 \includegraphics[width=0.8\linewidth]{figures/lifecycle-files.png}
 \end{center}
 \end{frame}
-\begin{frame}[label={sec:org077f6c1}]{Let's start locally}
+\begin{frame}[label={sec:org61e3195}]{Let's start locally}
 \begin{block}{Goal: Understand local workflow}
 \begin{enumerate}
 \item Create a repository
 \item Add and commit some files
-\item Fix bad commits
 \item Create a branch, then merge
 \end{enumerate}
 \end{block}
 \end{frame}
 
 
-\begin{frame}[label={sec:orga21a689}]{Let's go online}
+\begin{frame}[label={sec:orgc6ada8a}]{Let's go online}
 \begin{block}{Goal: Understand online/collaborative workflow}
 \begin{enumerate}
 \item Clone a repository
@@ -119,10 +117,11 @@ The life of a file in \alert{git}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org8002f9d}]{(Re)sources}
+\begin{frame}[label={sec:orgff70be7}]{(Re)sources}
 \begin{itemize}
 \item \url{https://git-scm.com/book/en/v2/}
 \item \url{https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet}
+\item \url{https://github.com/k88hudson/git-flight-rules}
 \end{itemize}
 \end{frame}
 \end{document}

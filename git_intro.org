@@ -7,8 +7,8 @@
 
 #+LaTex_HEADER: \usepackage{khpreamble}
 
-#+title: git and GitHub - seminar 1
-#+date: 2019-02-18
+#+title: git and GitHub an quick introduction
+#+date: 2020-08-29
 
 * What do I want the students to understand?			   :noexport:
   - Basic use of git
@@ -26,7 +26,7 @@
 ** What is version control?
    The *correct* solution to a common problem:
 
-   #+BEGIN_LaTeX
+   #+begin_export latex
           \begin{center}
           \begin{tikzpicture}
             \node (linus) at (0,0) {\includegraphics[width=5cm]{figures/Linus.jpg}};
@@ -39,14 +39,15 @@
           \end{tikzpicture}
           \end{center}
 
-   #+END_LaTeX
-
+   #+end_export
 
 
 ** What is GitHub?
 
    An online service to host *git* repositories (and a with a lot of services to manage code projects)
 
+   It is not the only option. There's also [[https://about.gitlab.com/][GitLab]] and [[https://bitbucket.org/product][Bitbucket]], and others.
+ 
 ** Version control the git way
    #+BEGIN_CENTER
     \includegraphics[width=0.8\linewidth]{figures/checkins.png}
@@ -79,8 +80,7 @@
 *** Goal: Understand local workflow
     1. Create a repository
     2. Add and commit some files
-    3. Fix bad commits
-    4. Create a branch, then merge
+    3. Create a branch, then merge
 
 
 ** Let's go online
@@ -93,5 +93,6 @@
 
 ** (Re)sources
 
-   -  [[https://git-scm.com/book/en/v2/]]
-   -  https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+   - [[https://git-scm.com/book/en/v2/]]
+   - https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+   - https://github.com/k88hudson/git-flight-rules
